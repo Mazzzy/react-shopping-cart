@@ -1,0 +1,169 @@
+nav {
+    background-color: #313A75;
+}
+nav .brand-logo {
+    left: 2.5em;
+}
+nav .bag-container {
+    position: relative;
+}
+nav .bag-container .bag-count {
+    position: absolute;
+    bottom: -21px;
+    right: 24px;
+}
+.search-container {
+    margin-top: 32px;
+}
+.search-container .input-field>label {
+    color: #313A75;
+}
+.search-container .input-field input.txt-search {
+    padding-left: 60px;
+    padding-bottom: 8px;
+    font-size: 3.6em;
+    border-bottom: 1px solid #525B92;
+    color: #313A75;
+}
+.list-title {
+    margin: 36px 0;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+.material-icons {
+    font-size: 2.4em;
+    cursor: pointer;
+}
+.card{
+    width: 300px;
+}
+.card:hover {
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2) !important;
+}
+.card .card-image .card-title {
+    color: black;
+    font-weight: 400
+}
+.bag{
+    margin-top:40px;
+}
+.collection .collection-item {
+    display: flex;
+}
+.collection-item.avatar .title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #313A75;
+    display: block;
+    margin-bottom: 20px;
+    
+}
+.collection .collection-item img {
+    width: 150px;
+    margin-right: 25px;
+}
+.item-desc {
+    align-self:center;
+}
+.waves-light {
+    background-color: #313A75;
+}
+.waves-light:hover {
+    background-color: #525B92;
+}
+
+/* Media Queries */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .card {
+        width: 100%
+    }
+    
+    .search-container .input-field input.txt-search {
+        max-width: 90%;
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .card {
+        width: 340px;
+    }
+    
+    .search-container .input-field input.txt-search {
+        max-width: 96%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .search-container .input-field input.txt-search {
+        max-width: 90%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .card {
+        width: 100%
+    }
+
+    .search-container .input-field input.txt-search {
+        max-width: 82%;
+    }
+
+    .collection .collection-item {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .collection .collection-item .item-img{
+        text-align: center;
+    }
+  }
